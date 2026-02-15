@@ -2,7 +2,7 @@ version: 1
 applications:
   - frontend:
       phases:
-        prebuild:
+        preBuild:
           commands:
             - 'npm install -g pnpm'
             - 'pnpm install'
