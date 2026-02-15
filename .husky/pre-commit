@@ -1,0 +1,7 @@
+eval "$(/opt/homebrew/bin/mise activate bash --shims)"
+
+# git-secrets によるシークレットのチェック
+git secrets --pre_commit_hook -- "$@"
+
+# lint-stagedによるリントとフォーマットを実行
+pnpm exec lint-staged
