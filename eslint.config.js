@@ -18,6 +18,6 @@ export default defineConfig([
     ...pluginReact.configs.flat["jsx-runtime"],
   },
   {
-    ignores: ["dist/"],
+    ignores: ["dist/", ".amplify/"],
   },
 ]);
